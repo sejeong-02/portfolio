@@ -8,6 +8,18 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+
+		<script type="importmap">
+			{
+			  "imports": {
+				"three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+				"three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+			  }
+			}
+		  </script>
+
+		     <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+			 <script type="module" src="assets/js/play.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -16,9 +28,10 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+						<!-- <a href="#home" class="icon solid fa-home"><span>Home</span></a> -->
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-                        <a href="#product" class="icon solid fa-shopping-cart"><span>Product</span></a>
+                        <!-- <a href="#product" class="icon solid fa-shopping-cart"><span>Product</span></a> -->
+						<a href="#play" class="icon solid fa-play"><span>Play</span></a>
                         <a href="#art" class="icon solid fa-brush"><span>Art</span></a>
 						<a href="#bio" class="icon solid fa-user"><span>Bio</span></a>
 						<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>twitter</span></a> -->
@@ -29,7 +42,7 @@
 					
 
 						<!-- Me -->
-							<article id="home" class="panel intro">
+							<!-- <article id="home" class="panel intro">
 								<header>
 									<h1>Sejeong Park</h1>
 									<p>Visual Designer and Content Creator</p>
@@ -38,15 +51,28 @@
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 									<img src="images/me1-480.jpg" alt="" />
 								</a>
-							</article>
+							</article> -->
 
 						<!-- Work -->
+						<article id="work" class="panel intro">
+							<header>
+								<h1>Sejeong Park</h1>
+								<p>Visual Designer and Content Creator</p>
+							</header>
+							<a class="jumplink pic">
+								<!-- <span class="arrow icon solid fa-chevron-right"> -->
+									<span>See my work</span></span>
+								<img src="images/me1-480.jpg" alt="" />
+							</a>
+						</article>
 							<article id="work" class="panel">
+								
 								<header>
 									<h2>Work</h2>
 								</header>
 								<p>
-									I'm Sejeong Park, a digital artist specializing in merchandise and visual design. I combine storytelling and artistic expression to create visually engaging and memorable digital experiences.
+									
+								Hi! I'm Sejeong Park, a visual artist and content creator passionate about storytelling through design. I combine storytelling and artistic expression to create memorable digital experiences, and I'm excited to keep making a positive impact through art and design.
 								</p>
 								<section class="project-item">
 									<div class="row">
@@ -54,14 +80,11 @@
 											<a href="#" class="image fit">
                                             <img src="images/project-sweet-500px.jpg" srcset="images/project-sweet-1000px.jpg 2x" alt="Merchandise plushie doll project by Sejeong Park" width="" height=""></a>
 										</div>
-										<div class="col-6 col-6-medium col-12-small">
-											<a href="#" class="image fit">
-                                            <img src="images/project-sweet-merchset-500px.jpg" srcset="images/project-sweet-merchset-1000px.jpg" alt="Merchandise plushie doll set by Sejeong Park" width="" height=""></a>
-										</div>
+				
                                         <div class="col-6 col-6-medium col-12-small">
 											<a href="#" class="image fit">
-                                                <video width="auto" height="290" autoplay loop muted>
-                                                    <source src="images/project-merchset.mp4" type="video/mp4" alt="3D character animation by Sejeong Park "></a>
+												<img src="images/project-little-500px.jpg" srcset="images/project-merchset.gif" alt="3D character animation by Sejeong Park "></a>
+                                                
 										</div>
                                         <div class="col-6 col-6-medium col-12-small">
 											<a href="#" class="image fit">
@@ -71,93 +94,103 @@
 											<a href="#" class="image fit">
                                             <img src="images/project-little-set-500px.jpg" srcset="images/project-little-set-1000px.jpg" alt="Merchandise plushie doll set by Sejeong Park" width="" height=""></a>
 										</div>
+								
+										<div class="col-6 col-6-medium col-12-small">
+											<a href="#" class="image fit">
+												<img src="images/project-christmas-1000px.gif" srcset="images/project-christmas-1000px.gif" alt="3D character animation by Sejeong Park "></a>
+										</div>
+										<div class="col-6 col-6-medium col-12-small">
+											<a href="#" class="image fit">
+                                            <img src="images/project-cozisoop3d-500px.jpg" srcset="images/project-cozisoop3d-1000px.jpg 2x" alt="San Jose State University KSA Merchandise by Sejeong Park" width="" height=""></a>
+										</div>
 										<div class="col-6 col-6-medium col-12-small">
 											<a href="#" class="image fit">
                                             <img src="images/project-txt-500px.jpg" srcset="images/project-txt-1000px.jpg" alt="Merchandise plushie doll set by Sejeong Park" width="" height=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit">
-                                                <img src="images/project-animation1-500px.jpg" srcset="images/project-animation1-1000px.jpg 2x" alt="Merchandise plushie doll project by Sejeong Park" width="" height=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit">
-                                                <img src="images/project-animation2-500px.jpg" srcset="images/project-animation2-1000px.jpg 2x" alt="Merchandise plushie doll project by Sejeong Park" width="" height=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit">
-                                                <img src="images/project-nana-500px.jpg" srcset="images/project-nana-1000px.jpg 2x" alt="Merchandise plushie doll project by Sejeong Park" width="" height=""></a>
-										</div>
 										<div class="col-6 col-6-medium col-12-small">
 											<a href="#" class="image fit">
-                                                <video width="auto" height="290" autoplay loop muted>
-                                                    <source src="images/project-christmas-1000px.mp4" type="video/mp4" alt="3D character animation by Sejeong Park "></a>
+                                            <img src="images/project-ksa-500px.jpg" srcset="images/project-ksa-1000px.jpg 2x" alt="San Jose State University KSA Merchandise by Sejeong Park" width="" height=""></a>
 										</div>
-										<div class="col-6 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-6 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-6 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
+								
+									
 										
 									</div>
 								</section>
 							</article>
 
-                            
-                        <!-- Product -->
-							<article id="product" class="panel">
+                            <!-- Product
+						 <article id="product" class="panel">
+							<header>
+								<h2>Product</h2>
+							</header>
+							<p>
+								Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
+								Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+								luctus elit eget interdum.
+							</p>
+							<section>
+								<div class="row">
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+									</div>
+								</div>
+							</section>
+						</article> -->
+
+                        <!-- Play -->
+							<article id="play" class="panel">
 								<header>
-									<h2>Product</h2>
+									<h2>Play</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									This is a little playground to interact with Maru, Sori, and Nana! <br>
+									Use the mouse and mouse wheel to rotate and zoom in/out around them. Also hold down shift to move around freely  <br> <br>
+									See what happens when you press the button below! (make sure to reload the page☺️)
 								</p>
 								<section>
 									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										<div id="scene-container">
+											<button id="catBtn">Say Hi!</button>
+
+											<!-- 3d scene -->
 										</div>
 									</div>
 								</section>
 							</article>
+					
 
                         <!-- Art -->
 							<article id="art" class="panel">
@@ -165,9 +198,7 @@
 									<h2>Art</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									These are some of my traditional works, created between 2019 and 2023 using graphite, watercolor, gouache, and colored pencils.
 								</p>
 								<section>
 									<div class="row">
@@ -209,7 +240,7 @@
 
                                 <div class="bio-wrapper">
                                     <section class="bio-pic">
-                                        <img src="images/me3-1000px.jpg" width=400px alt="">
+                                        <img src="images/me4.jpg" width=400px alt="">
                                         <p>
                                         Sejeong Park is a Bay Area merchandise and visual designer, with a passion for blending visual aesthetics and user experience. Her work spans a diverse range of projects, from launching original art initiatives to bringing her designs to market. Sejeong’s portfolio reflects her commitment to creating impactful, engaging artwork that resonates with audiences both in digital and consumer spaces. Sejeong strives to create aesthetic and interactive practical products that people can enjoy and connect emotionally with the designs. She is an enthusiastic digital media artist who forms playful and interactive experiences by utilizing physical objects to express her artistic expressions.
                                          </p>
@@ -251,6 +282,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/sketch.js"></script>
+			<!-- <script src="assets/js/sketch.js"></script> -->
+			<script src="assets/js/play.js"></script>
+
+
 	</body>
 </html>

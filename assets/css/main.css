@@ -29,6 +29,32 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+#scene-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	max-width: 100%;
+	max-height: 100%;
+  }
+
+#catBtn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 12px;
+	background-color: #4caf50;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  
+}
+
+
+#catBtn:hover {
+	background-color: #45a049;
+  }
+  
 body {
 	line-height: 1;
 }
