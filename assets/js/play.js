@@ -60,15 +60,15 @@ function init() {
 
         // --> Load glTF
 
-        // load fish dish model
-        loader.load('assets/fish.gltf', function (gltf) {
-            fish = gltf.scene;
-            scene.add(fish);
-            fish.scale.set(1.5, 1.5, 1.5); // scale your model
-            fish.position.set(0,0,0);
-            fish.position.y = -2; // set initial position
+        // // load fish dish model
+        // loader.load('assets/fish.gltf', function (gltf) {
+        //     fish = gltf.scene;
+        //     scene.add(fish);
+        //     fish.scale.set(1.5, 1.5, 1.5); // scale your model
+        //     fish.position.set(0,0,0);
+        //     fish.position.y = -2; // set initial position
 
-        })
+        // })
 
         // // load cat model
         loader.load('assets/cat_3.gltf', function (gltf) {
@@ -233,13 +233,13 @@ function animate() {
         mixer2.update(delta);
     }
 
-    fish.position.x += 0.2;
-    fish.position.y += 0.2;
+    // fish.position.x += 0.2;
+    // fish.position.y += 0.2;
    
 
-    fish.position.x = Math.sin(Date.now() / 2000) * 1.5;
-    fish.position.y = Math.sin(Date.now() / 4000) * 1.5;
-    fish.position.z = Math.sin(Date.now() / 2000) * 1.5;
+    // fish.position.x = Math.sin(Date.now() / 2000) * 1.5;
+    // fish.position.y = Math.sin(Date.now() / 4000) * 1.5;
+    // fish.position.z = Math.sin(Date.now() / 2000) * 1.5;
 
    
 
