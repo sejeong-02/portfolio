@@ -15,4 +15,4 @@ stopBtn.addEventListener('click', function () {
 
 })
 
-
+song.volume = .35;
