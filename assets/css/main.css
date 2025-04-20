@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 	max-height: 100%;
   }
 
-#catBtn {
+#catBtn, #play-button, #stop-button {
 	padding: 10px 20px;
 	border: none;
 	border-radius: 12px;
@@ -54,6 +54,14 @@ footer, header, hgroup, menu, nav, section {
 
 
 #catBtn:hover {
+	background-color: #5a5a5a;
+  }
+
+#play-button:hover {
+	background-color: #5a5a5a;
+  }
+
+#stop-button:hover {
 	background-color: #5a5a5a;
   }
   

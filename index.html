@@ -26,6 +26,7 @@
 
 		     <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
 			 <script type="module" src="assets/js/play.js"></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -77,6 +78,7 @@
 								
 								<header>
 									<h2>Work</h2>
+									
 								</header>
 								
 								<section class="project-item">
@@ -139,7 +141,12 @@
 									<div class="row">
 										<div id="scene-container">
 											<button id="catBtn">Say Hi!👋</button>
+											<button id="play-button" >Play music ▶️</button>
 
+											<button id="stop-button" >Stop music ⏹️</button>
+
+											<audio id="song" src="assets/background_song.mp3"></audio>
+											
 											<!-- 3d scene -->
 										</div>
 									</div>
@@ -364,7 +371,7 @@
 			<script src="assets/js/main.js"></script>
 			<!-- <script src="assets/js/sketch.js"></script> -->
 			<script src="assets/js/play.js"></script>
-
+			<script src="assets/js/sound.js"></script>
 
 	</body>
 </html>
